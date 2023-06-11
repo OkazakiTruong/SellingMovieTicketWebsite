@@ -1,0 +1,21 @@
+﻿* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+#btn{
+    display:flex;
+}
+#btn a{
+    text-decoration:none;
+    border: 1px solid black;
+    padding:20px 40px;
+    margin-left:20px;
+
+}
+    #btn div {
+        margin-top: 80px;
+    }
+    #btn a:hover{
+        background-color:red
+    }

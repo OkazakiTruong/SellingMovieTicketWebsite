@@ -1,0 +1,302 @@
+﻿* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#container {
+    font-family: Arial;
+}
+/*header*/
+#header{
+    border-bottom: solid 2px white;
+}
+#header .header-login {
+    background-color: rgb(94, 94, 94);
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    padding: 4px 0px;
+    color: white;
+}
+
+.header-straight-dash {
+    margin: 0px 10px;
+}
+
+.header-login-left,
+.header-login-right {
+    text-decoration: none;
+    color: white;
+}
+
+.header-login-right {
+    margin-right: 20px;
+}
+
+    .header-login-left:hover,
+    .header-login-right:hover {
+        color: #ff4d4d;
+    }
+
+.header-nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    line-height: 60px;
+    background-color: black;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ff4d4d;
+}
+
+.menu-icon {
+    display: none;
+}
+
+
+.header-nav-bar .header-nav-items {
+    list-style-type: none;
+}
+
+.header-nav-bar .nav-item {
+    display: inline;
+    margin: 0px 20px;
+}
+
+    .header-nav-bar .nav-item a {
+        color: white;
+        font-size: 20px;
+        font-weight: 300;
+        text-decoration: none;
+    }
+
+.cart-icon {
+    font-size: 24px;
+}
+.header-cart-icon a {
+    text-decoration: none;
+    color:white;
+}
+.header-cart-icon {
+    position: relative;
+}
+
+#numberOfMovieTicketInCart {
+    text-align: center;
+    width: 20px;
+    position: absolute;
+    bottom: 34px;
+    left: 5px;
+    font-size: 16px;
+    background-color: #ff4d4d;
+    border-radius: 50%;
+    line-height: 20px;
+}
+/*body*/
+#body{
+    background-color:black;
+    padding:40px 0px 80px 0px;
+
+}
+
+.body-title h2 {
+    padding-bottom: 70px;
+    text-decoration: underline;
+    text-align:center;
+}
+
+#body .movie-detail{
+    display:flex;
+    flex-direction:row;
+    margin:0px 60px;
+}
+.movie-detail-left img{
+    width: 400px;
+    height:500px;
+}
+.movie-detail-right {
+    color: white;
+    margin-left: 20px;
+}
+.movie-detail-right .movie-title,
+.movie-detail-right .movie-name {
+    border-bottom: solid 1px white;
+    padding-bottom:10px;
+    margin-bottom:10px;
+}
+
+.btn-added {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.btn-added .is-form{
+    width:20px;
+
+}
+.btn-added .input-qty{
+    width:40px;
+    text-align:center;
+}
+
+.btn-buy{
+    display:flex;
+    justify-content:left;
+    margin-bottom:10px;
+}
+.btn-buy-item {
+    width: 45%;
+    padding: 14px 0px;
+    margin-right: 10px;
+    color: white;
+    background-color: black;
+    border: solid 2px white;
+}
+.btn-buy-item:hover {
+    background-color: #ff4d4d;
+    cursor:pointer;
+}
+.movie-description h3 {
+    color: #ff4d4d;
+    margin:10px 0px;
+}
+.movie-description{
+    margin-bottom:20px;
+}
+.movie-national,
+.movie-time,
+.movie-year,
+.movie-type{
+    margin-bottom:5px;
+}
+/*footer*/
+#footer {
+    background-color: black;
+    border-top: solid 2px white;
+}
+
+    #footer .footer-contain {
+        color: white;
+        padding: 20px 0px 40px 0px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+.padding-top10 {
+    padding-top: 10px;
+}
+
+.main-color {
+    color: #ff4d4d !important;
+}
+/*popup*/
+.popup-container {
+    position: fixed;
+    background-color: rgb(94, 94, 94, 0.60);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display:none;
+    align-items: center;
+    justify-content: center;
+    color:white;
+}
+.popup {
+    width: 800px;
+    height: 350px;
+    border: solid 1px white;
+    background-image: url("../img/bg-img.jpg");
+    background-position: center;
+    animation: popupOpen ease 0.5s;
+}
+.popup-header{
+    text-align:right;
+    
+}
+.popup-header i {
+    border-left: solid 1px white;
+    border-bottom: solid 1px white;
+}
+    .popup-header i:hover {
+        background-color: #ff4d4d;
+        cursor:pointer;
+    }
+.popup-body{
+    margin-top:30px;
+    text-align:center;
+}
+.popup-body h3{
+    margin-bottom:40px;
+}
+.popup-body p{
+    margin-bottom:20px;
+}
+
+@keyframes popupOpen {
+    from {
+        transform: translateY(-120px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+/*responsive*/
+@media(max-width:765px) {
+    /*header*/
+    .header-nav-bar {
+        position: relative;
+    }
+
+    .menu-icon {
+        display: inline-block;
+    }
+
+        .menu-icon i {
+            color: white;
+            font-size: 24px;
+        }
+
+        .menu-icon:hover {
+            cursor: pointer;
+        }
+
+    .header-nav {
+        width: 100%;
+        position: absolute;
+        top: 63px;
+        display: none;
+    }
+
+    .header-nav-items {
+        display: flex;
+        flex-direction: column;
+        line-height: 60px;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+    }
+    /*body*/
+    #body .movie-detail {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 60px;
+    }
+    .movie-detail-left img {
+        width: 260px;
+        height: 340px;
+    }
+    /*footer*/
+    #footer {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,187 @@
+﻿* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#container {
+    font-family: Arial;
+}
+/*header*/
+#header{
+    border-bottom:1px solid white;
+}
+#header .header-login {
+    background-color: rgb(94, 94, 94);
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    padding: 4px 0px;
+    color: white;
+}
+
+.header-straight-dash {
+    margin: 0px 10px;
+}
+
+.header-login-left,
+.header-login-right {
+    text-decoration: none;
+    color: white;
+}
+
+.header-login-right {
+    margin-right: 20px;
+}
+
+    .header-login-left:hover,
+    .header-login-right:hover {
+        color: #ff4d4d;
+    }
+
+.header-nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    line-height: 60px;
+    background-color: black;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ff4d4d;
+}
+
+.menu-icon {
+    display: none;
+}
+
+
+.header-nav-bar .header-nav-items {
+    list-style-type: none;
+}
+
+.header-nav-bar .nav-item {
+    display: inline;
+    margin: 0px 20px;
+}
+
+.header-nav-bar .nav-item a {
+        color: white;
+        font-size: 20px;
+        font-weight: 300;
+        text-decoration: none;
+ }
+
+.cart-icon {
+    font-size: 24px;
+}
+
+.header-cart-icon a {
+    text-decoration: none;
+    color: white;
+}
+.header-cart-icon {
+    position: relative;
+}
+
+#numberOfMovieTicketInCart {
+    text-align: center;
+    width: 20px;
+    position: absolute;
+    bottom: 34px;
+    left: 5px;
+    font-size: 16px;
+    background-color: #ff4d4d;
+    border-radius: 50%;
+    line-height: 20px;
+}
+/*body*/
+#body .container {
+    text-align: center;
+    text-align: match-parent;
+    background-image: url("../img/bg-img.jpg");
+    color: white;
+    padding: 100px 0px 250px 0px;
+    background-position: center;
+}
+.body-header{
+    text-align:center;
+    padding-bottom:60px;
+}
+.body-header h1 {
+    text-decoration: underline;
+}
+/*footer*/
+#footer {
+    background-color: black;
+    border-top: solid 1px white
+}
+
+    #footer .footer-contain {
+        color: white;
+        padding: 20px 0px 40px 0px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+.padding-top10 {
+    padding-top: 10px;
+}
+
+.main-color {
+    color: #ff4d4d !important;
+}
+
+/*responsive*/
+@media(max-width:765px) {
+    /*header*/
+    .header-nav-bar {
+        position: relative;
+    }
+
+    .menu-icon {
+        display: inline-block;
+    }
+
+        .menu-icon i {
+            color: white;
+            font-size: 24px;
+        }
+
+        .menu-icon:hover {
+            cursor: pointer;
+        }
+
+    .header-nav {
+        width: 100%;
+        position: absolute;
+        top: 63px;
+        display: none;
+    }
+
+    .header-nav-items {
+        display: flex;
+        flex-direction: column;
+        line-height: 60px;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+    }
+    /*body*/
+    #body .container {
+        text-align: center;
+        text-align: match-parent;
+        background-image: url("../img/bg-img.jpg");
+        background-position: center;
+        color: white;
+        padding: 100px 0px 150px 0px;
+    }
+    /*footer*/
+    #footer {
+        font-size: 10px;
+    }
+}

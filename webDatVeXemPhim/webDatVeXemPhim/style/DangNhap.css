@@ -1,0 +1,125 @@
+﻿*{ 
+    padding: 0px;
+    margin: 0px;
+    box-sizing:border-box;
+}
+#container{
+    font-family:Arial;
+}
+/*header*/
+#header {
+    display: flex;
+    padding: 30px;
+}
+.logo a {
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ff4d4d;
+}
+#header .header-title {
+    font-size: 26px;
+    margin-left: 20px;
+}
+/*body*/
+#body{
+    background-image: url("../img/bg-img.jpg");
+    height: 600px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.dangNhap-title{
+    text-align:center;
+    margin-bottom:20px;
+    font-size:30px
+}
+.dangNhap-content input {
+    width: 200px;
+    margin: 0px 10px;
+}
+.dangNhap{
+    background-color: #ffffffd5;
+    width:800px;
+    height:400px;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+.dangNhap-inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+.dangNhap-btn {
+    margin: 20px 0px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+.dangKy-hienMK input {
+    width: fit-content;
+}
+
+.dangKy-hienMK label {
+    font-size: 14px;
+}
+
+.dangKy-hienMK {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+#btnDangNhap,
+#btnHuy {
+    width: 100%;
+    height: 40px;
+}
+
+#btnDangNhap:hover,
+#btnHuy:hover {
+     background-color: #ff4d4d;
+     color: white;
+}
+/*footer*/
+#footer .footer-contain {
+    color: black;
+    padding: 20px 0px 40px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.padding-top10 {
+    padding-top: 10px;
+}
+
+.main-color {
+    color: #ff4d4d !important;
+}
+
+/*responsive*/
+@media(max-width:765px) {
+    /*header*/
+    .logo a {
+        text-decoration: none;
+        font-size: 22px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #ff4d4d;
+    }
+
+    #header .header-title {
+        font-size: 22px;
+        margin-left: 20px;
+    }
+    /*footer*/
+    #footer {
+        font-size: 10px;
+    }
+}

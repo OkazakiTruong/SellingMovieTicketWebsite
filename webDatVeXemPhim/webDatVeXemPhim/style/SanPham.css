@@ -1,0 +1,274 @@
+﻿* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#container {
+    font-family: Arial;
+}
+/*header*/
+#header{
+    border-bottom:solid 1px white;
+}
+#header .header-login {
+    background-color: rgb(94, 94, 94);
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    padding: 4px 0px;
+    color: white;
+}
+.header-cart-icon {
+    position: relative;
+}
+
+#numberOfMovieTicketInCart {
+    text-align: center;
+    width: 20px;
+    position: absolute;
+    bottom: 34px;
+    left: 5px;
+    font-size: 16px;
+    background-color: #ff4d4d;
+    border-radius: 50%;
+    line-height:20px;
+}
+.header-straight-dash {
+    margin: 0px 10px;
+}
+
+.header-login-left,
+.header-login-right {
+    text-decoration: none;
+    color: white;
+}
+
+.header-login-right {
+    margin-right: 20px;
+}
+
+    .header-login-left:hover,
+    .header-login-right:hover {
+        color: #ff4d4d;
+    }
+.menu-icon{
+    display:none;
+}
+.header-nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    line-height: 60px;
+    background-color: black;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ff4d4d;
+}
+
+
+
+
+.header-nav-bar .header-nav-items {
+    list-style-type: none;
+}
+
+.header-nav-bar .nav-item {
+    display: inline;
+    margin: 0px 20px;
+}
+
+    .header-nav-bar .nav-item a {
+        color: white;
+        font-size: 20px;
+        font-weight: 300;
+        text-decoration: none;
+    }
+
+.cart-icon {
+    font-size: 24px;
+}
+
+.header-cart-icon a {
+    text-decoration: none;
+    color: white;
+}
+/*body*/
+#body{
+    padding:40px 0px;
+    background-color:black;
+}
+.body-title{
+    text-align:center;
+    padding-bottom:60px;
+    text-decoration:underline;
+}
+#body #soLuongFromServer{
+    padding: 20px 0px;
+}
+.box-left label{
+    color: white;
+}
+.body-content{
+    display:flex;
+    justify-content:center
+}
+.body-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+}
+.box-left{
+    margin-right:60px;
+}
+.movies-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.movies-container .movie {
+        margin-bottom: 20px;
+}
+
+.movies-container .movie-name a {
+        color: white;
+        text-decoration: none;
+        font-size: 24px;
+ }
+
+.movies-container .movie-name:hover a {
+        color: #ff4d4d;
+}
+
+.movies-container .movie .movie-new-price {
+        font-weight: 700;
+        color: #ff4d4d;
+}
+
+.movies-container .movie .movie-old-price {
+        text-decoration: 1px line-through;
+        color:white;
+}
+
+.movies-container .movie p {
+        display: inline-block;
+        margin-right: 10px;
+
+}
+
+.movies-container .movie img {
+        height: 300px;
+        width: 220px;
+}
+/*footer*/
+#footer {
+    background-color: black;
+    border-top:solid 1px white;
+}
+
+    #footer .footer-contain {
+        color: white;
+        padding: 20px 0px 40px 0px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+.padding-top10 {
+    padding-top: 10px;
+}
+
+.main-color {
+    color: #ff4d4d !important;
+}
+
+.find-movie-with-price{
+    display:flex;
+    flex-direction:column;
+    color:white;
+}
+/*responsive*/
+@media(max-width:765px) {
+    /*header*/
+    .header-nav-bar {
+        position: relative;
+    }
+    .movies-container .movie .img1 {
+        height: 470px;
+        width: 300px;
+    }
+    .menu-icon {
+        display: inline-block;
+    }
+
+        .menu-icon i {
+            color: white;
+            font-size: 24px;
+        }
+
+        .menu-icon:hover {
+            cursor: pointer;
+        }
+
+    .header-nav {
+        width: 100%;
+        position: absolute;
+        top: 63px;
+        display: none;
+    }
+
+    .header-nav-items {
+        display: flex;
+        flex-direction: column;
+        line-height: 60px;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+    }
+    /*body*/
+    .box-left {
+        margin-right: 0px;
+        padding-bottom:20px;
+        padding-left:20px;
+    }
+    .body-title h1 {
+        font-size: 24px;
+    }
+    .body-title{
+        padding-bottom:10px;
+    }
+    .body-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .movies-container .movie-name a {
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .movies-container .movie img {
+        width: 170px;
+        height: 210px;
+    }
+
+    .About-Us {
+        margin-bottom: 10px;
+    }
+
+    .About-main-contain img {
+        display: none;
+    }
+    /*footer*/
+    #footer {
+        font-size: 10px;
+    }
+}

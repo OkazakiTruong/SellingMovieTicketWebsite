@@ -1,0 +1,285 @@
+﻿* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#container {
+    font-family: Arial;
+}
+/*header*/
+#header {
+    border-bottom: solid 2px white;
+}
+
+    #header .header-login {
+        background-color: rgb(94, 94, 94);
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        padding: 4px 0px;
+        color: white;
+    }
+
+.header-straight-dash {
+    margin: 0px 10px;
+}
+
+.header-login-left,
+.header-login-right {
+    text-decoration: none;
+    color: white;
+}
+
+.header-login-right {
+    margin-right: 20px;
+}
+
+    .header-login-left:hover,
+    .header-login-right:hover {
+        color: #ff4d4d;
+    }
+
+.header-nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    line-height: 60px;
+    background-color: black;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ff4d4d;
+}
+.menu-icon {
+    display: none;
+}
+
+.header-nav-bar .header-nav-items {
+    list-style-type: none;
+}
+
+.header-nav-bar .nav-item {
+    display: inline;
+    margin: 0px 20px;
+}
+
+    .header-nav-bar .nav-item a {
+        color: white;
+        font-size: 20px;
+        font-weight: 300;
+        text-decoration: none;
+    }
+
+.cart-icon {
+    font-size: 24px;
+}
+
+.header-cart-icon a {
+    text-decoration: none;
+    color: white;
+}
+.header-cart-icon {
+    position: relative;
+}
+
+#numberOfMovieTicketInCart {
+    text-align: center;
+    width: 20px;
+    position: absolute;
+    bottom: 34px;
+    left: 5px;
+    font-size: 16px;
+    background-color: #ff4d4d;
+    border-radius: 50%;
+    line-height: 20px;
+}
+/*body*/
+#body{
+    background-color:black;
+    padding:40px 0px 160px 0px ;
+}
+#body .body-box{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+.body-top{
+ padding-bottom:20px;
+}
+.body-title {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.body-title-two{
+    text-align:center;
+    color:white;
+}
+.body-top-line{
+    display:flex;
+    justify-content:center;
+    padding:20px 0px 60px 0px;
+}
+.body-top-line hr {
+    line-height:10px;
+    width: 300px;
+}
+
+
+.body-box .box-left {
+    width: 50%;
+}
+.box-left-top {
+    margin-bottom: 60px;
+    border: solid 0.5px white;
+}
+.movie-tickets{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+.movie-tickets .movie-ticket-left {
+        display: flex;
+        flex-direction: row;
+        align-items:center
+}
+.movie-tickets .movie-ticket-left .movie-ticket-content{
+    color:white;
+    padding-left:10px;
+}
+.movie-tickets .movie-ticket-left img{
+    width:100px;
+    height:120px;
+}
+.btn-delete-ticket{
+    text-decoration:none;
+    color:white;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+}
+.btn-delete-ticket:hover{
+    background-color: #ff4d4d;
+}
+.body-box .box-right {
+    color: white;
+    border: solid 1px white;
+    display: flex;
+    flex-direction: column;
+    width: 30%
+}
+.body-box .box-right .movies-ticket-info{
+    font-size: 20px;
+    padding: 10px;
+    border-bottom:dotted 1px white;
+}
+.body-box .box-right .total-fee{
+    padding: 10px;
+    border-bottom:dotted 1px white;
+}
+.body-box .box-right #feeFromServer{
+    font-size:30px;
+    float:right;
+}
+.box-right-btn {
+    padding: 10px;
+}
+.box-right-btn #btnPay{
+    width: 100%;
+    line-height:40px;
+    background-color:#ff4d4d;
+    border: solid 1px white;
+    color:white
+}
+.box-right-btn #btnPay:hover{
+    background-color:white;
+    color:black;
+}
+.box-left-bottom-policy{
+    color:white;
+}
+/*footer*/
+#footer {
+    background-color: black;
+    border-top: solid 2px white;
+}
+
+    #footer .footer-contain {
+        color: white;
+        padding: 20px 0px 40px 0px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+.padding-top10 {
+    padding-top: 10px;
+}
+
+.main-color {
+    color: #ff4d4d !important;
+}
+
+/*responsive*/
+@media(max-width:765px) {
+    /*header*/
+    .header-nav-bar {
+        position: relative;
+    }
+
+    .menu-icon {
+        display: inline-block;
+    }
+
+        .menu-icon i {
+            color: white;
+            font-size: 24px;
+        }
+
+        .menu-icon:hover {
+            cursor: pointer;
+        }
+
+    .header-nav {
+        width: 100%;
+        position: absolute;
+        top: 63px;
+        display: none;
+    }
+
+    .header-nav-items {
+        display: flex;
+        flex-direction: column;
+        line-height: 60px;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+    }
+    /*body*/
+    #body .body-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .body-box .box-right {
+        color: white;
+        border: solid 1px white;
+        display: flex;
+        flex-direction: column;
+        margin:20px;
+        width: 80%
+    }
+    .body-box .box-left {
+        width: 100%;
+    }
+    /*footer*/
+    #footer {
+        font-size: 10px;
+    }
+
+}
